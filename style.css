@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+  background-color: #fff;
+  width: 60%;
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: 280px auto;
+  border-radius: 12px;
+  /* overflow: hidden; */
+  box-shadow: 0 10px 20px hsl(217, 19%, 35%, 0.1);
+}
+
+.img-bg {
+  background-image: url("./images/drawers.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px 0 0 12px;
+}
+
+.card-content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.highlighted-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.normal-text {
+  font-size: 0.875rem;
+  color: hsl(214, 17%, 51%);
+  margin: 1.25rem 0;
+}
+
+.card-footer,
+.author-info {
+  display: flex;
+}
+
+.card-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  border-radius: 100px;
+}
+
+.name {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.date {
+  font-size: 0.85rem;
+  color: hsl(214, 17%, 51%);
+}
+
+.share {
+  position: relative;
+  background-color: hsl(210, 46%, 95%);
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.socials-tab {
+  position: absolute;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+  top: -50px;
+  right: -20%;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.socials-tab::after {
+  content: "";
+  width: 30px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  bottom: -20px;
+  left: 45%;
+}
