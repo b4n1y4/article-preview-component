@@ -52,7 +52,22 @@
               </div>
             </div>
             <script>
-              const handleClick = (e) => {};
+              let tabOpen = false;
+              const handleClick = (e) => {
+                if (tabOpen) {
+                  document
+                    .getElementsByClassName("visible")[0]
+                    .classList.remove("visible");
+                  e.classList.remove("active");
+                  tabOpen = false;
+                } else {
+                  document
+                    .getElementsByClassName("socials-tab")[0]
+                    .classList.add("visible");
+                  e.classList.add("active");
+                  tabOpen = true;
+                }
+              };
             </script>
             <button class="share" onclick="handleClick(this)">
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
@@ -63,7 +78,7 @@
               </svg>
             </button>
 
-            <div class="socials-tab visible">
+            <div class="socials-tab">
               <p class="share-text">share</p>
               <img
                 src="./images/icon-facebook.svg"
