@@ -1,4 +1,4 @@
-![Live Site](https://b4n1y4.github.io/article-preview-component/)
+[Live Site](https://b4n1y4.github.io/article-preview-component/)
 
 ## Frontend Mentor - Article preview component
 
