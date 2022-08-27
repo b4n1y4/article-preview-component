@@ -1,4 +1,6 @@
-# Frontend Mentor - Article preview component
+![Live Site](https://b4n1y4.github.io/article-preview-component/)
+
+## Frontend Mentor - Article preview component
 
 ![Design preview for the Article preview component coding challenge](./design/desktop-preview.jpg)
 
